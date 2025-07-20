@@ -1,0 +1,98 @@
+.dashboard-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.add-post-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.add-post-button:hover {
+    background-color: #0056b3;
+}
+
+.posts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.post-item img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.post-item div {
+    flex-grow: 1;
+}
+
+.post-item p {
+    margin: 5px 0;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* View Post Button - Blue */
+.view-post-button {
+    background-color: #17a2b8;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.view-post-button:hover {
+    background-color: #138496;
+}
+
+/* Edit Post Button - Orange */
+.edit-post-button {
+    background-color: #ffc107;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.edit-post-button:hover {
+    background-color: #e0a800;
+}
+
+/* Delete Post Button - Red */
+.delete-post-button {
+    background-color: #dc3545;
+    border-radius: 10px;
+}
+
+.delete-post-button:hover {
+    background-color: #c82333;
+}

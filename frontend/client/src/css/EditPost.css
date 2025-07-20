@@ -1,0 +1,86 @@
+/* Container for the form */
+.edit-post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form labels */
+.edit-post-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Form inputs */
+.edit-post-form input,
+.edit-post-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Image preview */
+.edit-post-form img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button */
+.edit-post-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-post-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Add spacing between elements */
+.edit-post-form input[type="file"] {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.edit-post-form select {
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .edit-post-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .edit-post-form button {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,62 @@
+/* Container for the form */
+.add-post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form inputs */
+.add-post-form input,
+.add-post-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Submit button */
+.add-post-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.add-post-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Add spacing between elements */
+.add-post-form input[type="file"] {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.add-post-form select {
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-post-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .add-post-form button {
+        font-size: 16px;
+    }
+}

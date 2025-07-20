@@ -1,0 +1,164 @@
+/* Add Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fc;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.Container1 {
+  border: 2px solid #d9e2ec;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.img-Container {
+  width: 50%;
+  height: auto;
+}
+
+.img-Container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.form-Container {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-Container h1 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-Container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container .input-icon {
+  position: absolute;
+  left: 10px;
+  color: #1a73e8;
+}
+
+.form-Container form input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; 
+  border: 1px solid #d9e2ec;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-Container form input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 8px rgba(26, 115, 232, 0.3);
+  outline: none;
+}
+
+.form-Container form button {
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-Container form button:hover {
+  background-color: #1557b6;
+}
+
+.form-Container p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-Container p a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-Container p a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Container1 {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .img-Container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .form-Container {
+    width: 100%;
+  }
+
+  .form-Container form input, .form-Container form button {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-Container form input, .form-Container form button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Container1 {
+    padding: 5px;
+  }
+
+  .img-Container {
+    height: 150px;
+  }
+}

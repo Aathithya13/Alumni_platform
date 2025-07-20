@@ -1,0 +1,103 @@
+/* Basic navbar styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navbar__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar__item {
+    font-size: 1rem;
+    margin-right: 30px;
+  }
+  
+  .navbar__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar__link:hover {
+    color: #ffb400; /* Hover color animation */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      flex-direction: column;
+      width: 100%;
+      transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out;
+      opacity: 0;
+      pointer-events: none; /* Hide clicks when closed */
+    }
+  
+    .navbar__menu.active {
+      transform: translateY(0); /* Slide in animation for mobile menu */
+      opacity: 1;
+      pointer-events: auto; /* Enable clicks when opened */
+    }
+  
+    .navbar__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .navbar__toggle {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+      width: 30px;
+    }
+  
+    .navbar__toggle-icon {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      transition: 0.3s ease;
+    }
+  
+    /* Toggle animation */
+    .navbar__toggle.active .navbar__toggle-icon:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .navbar__toggle.active .navbar__toggle-icon:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar__toggle.active .navbar__toggle-icon:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
